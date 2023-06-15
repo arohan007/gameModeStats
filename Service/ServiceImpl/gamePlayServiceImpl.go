@@ -3,8 +3,11 @@ package ServiceImpl
 import (
 	"context"
 	"errors"
-	"github.com/arohan007/gameModeStats/Models"
 	"sync"
+
+	"github.com/arohan007/gameModeStats/Models"
+
+	"github.com/go-redis/redis/v8"
 )
 
 type GamePlayServiceImpl struct {
